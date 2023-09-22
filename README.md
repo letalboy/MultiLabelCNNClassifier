@@ -9,16 +9,16 @@ To get started, place your image data into the `Data/Images` directory. The expe
 ```
 Data
 └── Images
-        ├── Category
-        |    ├── AniName.jpg
-        |    ├── AniName.jpg
-        |    ├── AniName.jpg
-        |    └── AniName.jpg
-        └── Category
-            ├── AniName.jpg
-            ├── AniName.jpg
-            ├── AniName.jpg
-            └── AniName.jpg
+    ├── Category
+    |   ├── AniName.jpg
+    |   ├── AniName.jpg
+    |   ├── AniName.jpg
+    |   └── AniName.jpg
+    └── Category
+        ├── AniName.jpg
+        ├── AniName.jpg
+        ├── AniName.jpg
+        └── AniName.jpg
 ```
 
 ## Data Augmentation

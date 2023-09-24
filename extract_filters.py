@@ -4,14 +4,16 @@ import matplotlib.pyplot as plt
 import torch
 import os
 
-from agent import MultiLabelClassifier
+from agent import MultiLabelClassifier, RCNN_MultiLabelClassifier
 
 THIS_DIR = os.path.dirname(__file__)
 MODELS = os.path.join(THIS_DIR, "Models")
-MODEL = os.path.join(MODELS, "Checkpoint1.pth")
+MODEL = os.path.join(MODELS, "Test1.pth")
 
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
-model = MultiLabelClassifier(num_labels=11).to(device)
+# model = MultiLabelClassifier(num_labels=11).to(device)
+
+model = MultiLabelClassifier(num_labels=15).to(device)
 
 model.load_state_dict(torch.load(MODEL))
 model.eval()
